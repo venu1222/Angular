@@ -1,0 +1,40 @@
+<h1>{{title}}</h1>
+<h1>{{ createServer()}} </h1>
+<app-servers></app-servers>
+<app-warning-alerts></app-warning-alerts>
+<app-success-alerts></app-success-alerts>
+<input type="text" class="form-control" [(ngModel)]="servername">
+<!--Attribute selector usage-->
+<!--<div app-servers></div>-->
+<!--Classs as Selector-->
+<!--<div class="app-servers"></div>-->
+<button [disabled]="!allowaddserver" (click)="updateserverstatus()">AddServer</button>
+<h1>{{serverstatus}}</h1>
+<!--<label>servername</label>
+<input type="text" (input)="display($event)">-->
+
+<!--<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<ol>
+    <li>Add a Input field which updates property username via Two-way-Binding</li>
+    <li>Output the username property via string interpolation (In a paragraph below the input)</li>
+    <li>Add a button which may only be clicked if the username is not empty string</li>
+    <li>Upon clicking the button,the username should be reset to empty string</li>
+</ol>
+<label>Username</label>
+<input type="text" class="form-control" [(ngModel)]="username">
+<hr>
+<p>{{username}}</p>
+<button class="btn btn-primary" [disabled]="username ===''" (click)="username ='' ">Reset</button>
+</div>
+</div>
+</div>-->
+
+
+
+
+
+
+
+
